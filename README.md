@@ -1,3 +1,4 @@
+
 # The Monoidal Monastery of Mathematics
 
 This is a Clojure repo for exploring mathematics with the intention of doing so
@@ -11,9 +12,17 @@ the ClojureScript environment embedded in Roam.
 A **monoid** a non-empty set $M$ together with a binary associative operation $* : M \times M \to M$,
 and there is on special element $e \in M$ that doesn't change under the operation, so for every $a \in M$, it's the case that $e * a = e * a = a$.
 
+In [grp.clj](src/mmm/grp.clj) you will see a definition of a **group**. If you know what a monoid is,
+then a group is just a monoid with inverses. So for every $a \in G$, there is a $b \in G$ such that
+$a * b = b * a = e$. 
+
 ## Usage
 
-FIXME
+```shell
+lein repl
+```
+
+And then use `cider-connect` in Emacs to connect to the repl and eval your code in the buffer.
 
 ## License
 
