@@ -44,7 +44,7 @@
 
 ;; Learning protocols and applying them to this project
 (defprotocol AlgebraicStructure
-  "Alebgraic structures are pairs (A, "
+  "Algebraic structures are pairs (A, *) where A is a set and *:AxA->A"
   (elems [a]) ;; Returns a nonempty set of elements
   (id [a])    ;; An identity element (can be nil for semigroups)
   (op [a]))   ;; Returns a binary operation (fn [x y])
